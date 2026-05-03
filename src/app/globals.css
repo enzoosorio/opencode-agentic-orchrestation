@@ -1,0 +1,74 @@
+:root {
+  --bg: #0b0d10;
+  --fg: #c8d1d9;
+  --muted: #6e7681;
+  --accent: #3fb950;
+  --warn: #d29922;
+  --err: #f85149;
+  --border: #21262d;
+  --selection: #1f6feb44;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code",
+    Menlo, Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+::selection {
+  background: var(--selection);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 1px solid var(--accent);
+  outline-offset: -1px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+.muted {
+  color: var(--muted);
+}
+.accent {
+  color: var(--accent);
+}
+.warn {
+  color: var(--warn);
+}
+.err {
+  color: var(--err);
+}
