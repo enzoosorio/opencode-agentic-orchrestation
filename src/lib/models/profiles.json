@@ -17,8 +17,6 @@
       "cache_hit_per_m": null,
       "blended_7_2_1": null
     },
-    // TODO: scrapear correctamente estas métricas de rendimiento, que son muy importantes.
-    // para ello, debemos señalar los ELEMENTOS HTML a scrapear correctos.
     "performance": {
       "tokens_per_sec": 5.1,
       "ttft_seconds": null,
@@ -60,11 +58,2119 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-05-04T04:38:27.662Z",
+    "last_updated": "2026-05-04T08:15:09.913Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
       "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
       "livebench": "https://livebench.ai/#/?q=GLM-5.1&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "GLM-5.1",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5-1",
+    "slug_or": "z-ai/glm-5.1",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1.4,
+      "output_per_m": 4.4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 5.1,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:15:44.089Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
+      "livebench": "https://livebench.ai/#/?q=GLM-5.1&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "GLM-5.1",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5-1",
+    "slug_or": "z-ai/glm-5.1",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1.4,
+      "output_per_m": 4.4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 5.1,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:16:18.117Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
+      "livebench": "https://livebench.ai/#/?q=GLM-5.1&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "GLM-5",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5",
+    "slug_or": "z-ai/glm-5",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:16:52.383Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5",
+      "livebench": "https://livebench.ai/#/?q=GLM-5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "GLM-5",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5",
+    "slug_or": "z-ai/glm-5",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:17:26.667Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5",
+      "livebench": "https://livebench.ai/#/?q=GLM-5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "GLM-5",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5",
+    "slug_or": "z-ai/glm-5",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:18:00.934Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5",
+      "livebench": "https://livebench.ai/#/?q=GLM-5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Kimi K2.5",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Moonshot AI"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "kimi-k2-5",
+    "slug_or": "moonshotai/kimi-k2.5",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0.5,
+      "output_per_m": 2.85,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 75.96,
+        "coding": 77.86,
+        "agentic_coding": 48.33,
+        "math": 84.87,
+        "data": 61.36,
+        "language": 77.67,
+        "if": 57.41
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:18:35.143Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/kimi-k2-5",
+      "openrouter": "https://openrouter.ai/moonshotai/kimi-k2.5",
+      "livebench": "https://livebench.ai/#/?q=Kimi%20K2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Kimi K2.6",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Moonshot AI"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "kimi-k2-6",
+    "slug_or": "moonshotai/kimi-k2.6",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0.95,
+      "output_per_m": 4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.6,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 79.38,
+        "coding": 78.57,
+        "agentic_coding": 58.33,
+        "math": 84.28,
+        "data": 65.13,
+        "language": 75.14,
+        "if": 64.36
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:19:10.074Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/kimi-k2-6",
+      "openrouter": "https://openrouter.ai/moonshotai/kimi-k2.6",
+      "livebench": "https://livebench.ai/#/?q=Kimi%20K2.6&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Pro",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-pro",
+    "slug_or": "xiaomi/mimo-v2-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:19:44.736Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Pro",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-pro",
+    "slug_or": "xiaomi/mimo-v2-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:20:19.414Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Pro",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-pro",
+    "slug_or": "xiaomi/mimo-v2-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:20:53.675Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Omni",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-omni",
+    "slug_or": "xiaomi/mimo-v2-omni",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0,
+      "output_per_m": 0,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:21:27.830Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-omni",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Omni&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Omni",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-omni",
+    "slug_or": "xiaomi/mimo-v2-omni",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0,
+      "output_per_m": 0,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:22:02.061Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-omni",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Omni&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2-Omni",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-omni",
+    "slug_or": "xiaomi/mimo-v2-omni",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0,
+      "output_per_m": 0,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:22:36.553Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2-omni",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2-Omni&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5-Pro",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-5-pro",
+    "slug_or": "xiaomi/mimo-v2.5-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:23:10.675Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5-Pro",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-5-pro",
+    "slug_or": "xiaomi/mimo-v2.5-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:23:44.889Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5-Pro",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "mimo-v2-5-pro",
+    "slug_or": "xiaomi/mimo-v2.5-pro",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 1,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:24:19.084Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5-Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": null,
+    "slug_or": "xiaomi/mimo-v2.5",
+    "context_window_tokens": 1048576,
+    "pricing": {
+      "input_per_m": 0.39999999999999997,
+      "output_per_m": 2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:24:52.942Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": null,
+    "slug_or": "xiaomi/mimo-v2.5",
+    "context_window_tokens": 1048576,
+    "pricing": {
+      "input_per_m": 0.39999999999999997,
+      "output_per_m": 2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:25:27.127Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiMo-V2.5",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Xiaomi MiMo"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": null,
+    "slug_or": "xiaomi/mimo-v2.5",
+    "context_window_tokens": 1048576,
+    "pricing": {
+      "input_per_m": 0.39999999999999997,
+      "output_per_m": 2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 69.7,
+        "coding": 68.85,
+        "agentic_coding": 30,
+        "math": 76.96,
+        "data": 49.21,
+        "language": 69.07,
+        "if": 43.22
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:26:01.238Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
+      "livebench": "https://livebench.ai/#/?q=MiMo-V2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Qwen3.5 Plus",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Alibaba Cloud Model Studio"
+    ],
+    "sdk": "alibaba",
+    "slug_oa": null,
+    "slug_or": "qwen/qwen3.5-plus-20260420",
+    "context_window_tokens": 1000000,
+    "pricing": {
+      "input_per_m": 0.39999999999999997,
+      "output_per_m": 2.4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 75.83,
+        "coding": 78.18,
+        "agentic_coding": 55,
+        "math": 83.72,
+        "data": 69.91,
+        "language": 74.99,
+        "if": 58.34
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:26:35.495Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/qwen/qwen3.5-plus-20260420",
+      "livebench": "https://livebench.ai/#/?q=Qwen3.5%20Plus&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Qwen3.5 Plus",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Alibaba Cloud Model Studio"
+    ],
+    "sdk": "alibaba",
+    "slug_oa": null,
+    "slug_or": "qwen/qwen3.5-plus-20260420",
+    "context_window_tokens": 1000000,
+    "pricing": {
+      "input_per_m": 0.39999999999999997,
+      "output_per_m": 2.4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 75.83,
+        "coding": 78.18,
+        "agentic_coding": 55,
+        "math": 83.72,
+        "data": 69.91,
+        "language": 74.99,
+        "if": 58.34
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:27:09.826Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/qwen/qwen3.5-plus-20260420",
+      "livebench": "https://livebench.ai/#/?q=Qwen3.5%20Plus&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Qwen3.6 Plus",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "Alibaba Cloud Model Studio"
+    ],
+    "sdk": "alibaba",
+    "slug_oa": "qwen3-6-plus",
+    "slug_or": "qwen/qwen3.6-plus",
+    "context_window_tokens": 3,
+    "pricing": {
+      "input_per_m": 0.5,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 3.6,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 75.83,
+        "coding": 78.18,
+        "agentic_coding": 55,
+        "math": 83.72,
+        "data": 69.91,
+        "language": 74.99,
+        "if": 58.34
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:27:44.025Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/qwen3-6-plus",
+      "openrouter": "https://openrouter.ai/qwen/qwen3.6-plus",
+      "livebench": "https://livebench.ai/#/?q=Qwen3.6%20Plus&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "Qwen3.6 Plus",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "Alibaba Cloud Model Studio"
+    ],
+    "sdk": "alibaba",
+    "slug_oa": "qwen3-6-plus",
+    "slug_or": "qwen/qwen3.6-plus",
+    "context_window_tokens": 3,
+    "pricing": {
+      "input_per_m": 0.5,
+      "output_per_m": 3,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 3.6,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 75.83,
+        "coding": 78.18,
+        "agentic_coding": 55,
+        "math": 83.72,
+        "data": 69.91,
+        "language": 74.99,
+        "if": 58.34
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:28:18.179Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/qwen3-6-plus",
+      "openrouter": "https://openrouter.ai/qwen/qwen3.6-plus",
+      "livebench": "https://livebench.ai/#/?q=Qwen3.6%20Plus&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiniMax M2.7",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "MiniMax"
+    ],
+    "sdk": "anthropic",
+    "slug_oa": "minimax-m2-7",
+    "slug_or": "minimax/minimax-m2.7",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0.3,
+      "output_per_m": 1.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.7,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 74.79,
+        "coding": 54.9,
+        "agentic_coding": 50,
+        "math": 80.54,
+        "data": 56.34,
+        "language": 66.78,
+        "if": 61.12
+      }
+    },
+    "verbosity_tokens": 3,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:28:52.341Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-7",
+      "openrouter": "https://openrouter.ai/minimax/minimax-m2.7",
+      "livebench": "https://livebench.ai/#/?q=MiniMax%20M2.7&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiniMax M2.7",
+    "variant": "max",
+    "provider_used_by_opencode": [
+      "MiniMax"
+    ],
+    "sdk": "anthropic",
+    "slug_oa": null,
+    "slug_or": "minimax/minimax-m2.7",
+    "context_window_tokens": 196608,
+    "pricing": {
+      "input_per_m": 0.3,
+      "output_per_m": 1.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": null,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": null,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {},
+      "livebench": {
+        "reasoning": 74.79,
+        "coding": 54.9,
+        "agentic_coding": 50,
+        "math": 80.54,
+        "data": 56.34,
+        "language": 66.78,
+        "if": 61.12
+      }
+    },
+    "verbosity_tokens": null,
+    "cost_to_eval_usd": null,
+    "open_weights": null,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:29:26.271Z",
+    "source_urls": {
+      "artificialanalysis": null,
+      "openrouter": "https://openrouter.ai/minimax/minimax-m2.7",
+      "livebench": "https://livebench.ai/#/?q=MiniMax%20M2.7&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiniMax M2.5",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "MiniMax"
+    ],
+    "sdk": "anthropic",
+    "slug_oa": "minimax-m2-5",
+    "slug_or": "minimax/minimax-m2.5",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0.3,
+      "output_per_m": 1.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 59.3,
+        "coding": 70.7,
+        "agentic_coding": 51.67,
+        "math": 77.41,
+        "data": 49.6,
+        "language": 55.1,
+        "if": 57.23
+      }
+    },
+    "verbosity_tokens": 3,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:30:00.621Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-5",
+      "openrouter": "https://openrouter.ai/minimax/minimax-m2.5",
+      "livebench": "https://livebench.ai/#/?q=MiniMax%20M2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "MiniMax M2.5",
+    "variant": "max",
+    "provider_used_by_opencode": [
+      "MiniMax"
+    ],
+    "sdk": "anthropic",
+    "slug_oa": "minimax-m2-5",
+    "slug_or": "minimax/minimax-m2.5",
+    "context_window_tokens": 2,
+    "pricing": {
+      "input_per_m": 0.3,
+      "output_per_m": 1.2,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 2.5,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 59.3,
+        "coding": 70.7,
+        "agentic_coding": 51.67,
+        "math": 77.41,
+        "data": 49.6,
+        "language": 55.1,
+        "if": 57.23
+      }
+    },
+    "verbosity_tokens": 3,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:30:34.887Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-5",
+      "openrouter": "https://openrouter.ai/minimax/minimax-m2.5",
+      "livebench": "https://livebench.ai/#/?q=MiniMax%20M2.5&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Pro",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-pro-high",
+    "slug_or": "deepseek/deepseek-v4-pro",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 1.74,
+      "output_per_m": 3.48,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 82.69,
+        "coding": 69.99,
+        "agentic_coding": 56.67,
+        "math": 90.68,
+        "data": 74.54,
+        "language": 78.13,
+        "if": 62.35
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:31:09.292Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro-high",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Pro",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-pro-high",
+    "slug_or": "deepseek/deepseek-v4-pro",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 1.74,
+      "output_per_m": 3.48,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 82.69,
+        "coding": 69.99,
+        "agentic_coding": 56.67,
+        "math": 90.68,
+        "data": 74.54,
+        "language": 78.13,
+        "if": 62.35
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:31:43.615Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro-high",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Pro",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-pro-high",
+    "slug_or": "deepseek/deepseek-v4-pro",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 1.74,
+      "output_per_m": 3.48,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 82.69,
+        "coding": 69.99,
+        "agentic_coding": 56.67,
+        "math": 90.68,
+        "data": 74.54,
+        "language": 78.13,
+        "if": 62.35
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:32:17.939Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro-high",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Pro",
+    "variant": "max",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-pro",
+    "slug_or": "deepseek/deepseek-v4-pro",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 1.74,
+      "output_per_m": 3.48,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 82.69,
+        "coding": 69.99,
+        "agentic_coding": 56.67,
+        "math": 90.68,
+        "data": 74.54,
+        "language": 78.13,
+        "if": 62.35
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:32:52.277Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Pro&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Flash",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-flash",
+    "slug_or": "deepseek/deepseek-v4-flash",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 0.14,
+      "output_per_m": 0.28,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 70.58,
+        "coding": 69.23,
+        "agentic_coding": 50,
+        "math": 79.65,
+        "data": 68.02,
+        "language": 70.12,
+        "if": 63.14
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:33:26.601Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Flash&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Flash",
+    "variant": "medium",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-flash",
+    "slug_or": "deepseek/deepseek-v4-flash",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 0.14,
+      "output_per_m": 0.28,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 70.58,
+        "coding": 69.23,
+        "agentic_coding": 50,
+        "math": 79.65,
+        "data": 68.02,
+        "language": 70.12,
+        "if": 63.14
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:34:00.811Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Flash&sort=Reasoning+Average&highunseenbias=true"
+    }
+  },
+  {
+    "model_name": "DeepSeek V4 Flash",
+    "variant": "high",
+    "provider_used_by_opencode": [
+      "DeepSeek"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "deepseek-v4-flash",
+    "slug_or": "deepseek/deepseek-v4-flash",
+    "context_window_tokens": 4,
+    "pricing": {
+      "input_per_m": 0.14,
+      "output_per_m": 0.28,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    "performance": {
+      "tokens_per_sec": 4,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 70.58,
+        "coding": 69.23,
+        "agentic_coding": 50,
+        "math": 79.65,
+        "data": 68.02,
+        "language": 70.12,
+        "if": 63.14
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T08:34:35.199Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
+      "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
+      "livebench": "https://livebench.ai/#/?q=DeepSeek%20V4%20Flash&sort=Reasoning+Average&highunseenbias=true"
     }
   }
 ]
