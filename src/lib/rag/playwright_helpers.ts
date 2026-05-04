@@ -1,10 +1,11 @@
-import { chromium, type Browser, type BrowserContext } from "playwright";
+import { firefox, type Browser, type BrowserContext } from "playwright";
 
 let _browser: Browser | null = null;
 
 export async function getBrowser(): Promise<Browser> {
   if (_browser) return _browser;
-  _browser = await chromium.launch({ headless: true });
+  const headless = process.env.PLAYWRIGHT_HEADLESS !== "false";
+  _browser = await firefox.launch({ headless });
   return _browser;
 }
 
@@ -12,7 +13,7 @@ export async function newContext(): Promise<BrowserContext> {
   const browser = await getBrowser();
   return browser.newContext({
     userAgent:
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0",
     viewport: { width: 1440, height: 900 },
   });
 }

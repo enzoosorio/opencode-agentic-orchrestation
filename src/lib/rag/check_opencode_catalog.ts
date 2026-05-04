@@ -41,6 +41,12 @@ async function fetchGithubModels(): Promise<Array<{ name: string; provider: stri
   return out;
 }
 
+// esta funcion me ayuda a comprobar sobre los modelos nuevos que han sido añadidos 
+// a opencode, y los que han sido eliminados, para asi mantener mi catalogo local 
+// actualizado y evitar errores al intentar acceder a modelos que ya no existen o 
+// no tener acceso a los nuevos modelos disponibles. Ademas, me permite detectar 
+// cambios en los proveedores de los modelos, lo cual es importante para asegurar 
+// la compatibilidad y el rendimiento de las aplicaciones que dependen de estos modelos.
 export async function checkOpencodeCatalog(): Promise<CatalogDiff> {
   const errors: string[] = [];
   let zen_models: string[] = [];

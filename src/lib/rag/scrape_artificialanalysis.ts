@@ -73,11 +73,14 @@ async function tryGoto(page: Page, url: string): Promise<boolean> {
  * (either "Language Models" or "Model Providers").
  */
 async function searchCandidates(page: Page, query: string): Promise<FuzzyCandidate[]> {
-  await page.goto(`${BASE}/models`, { waitUntil: "domcontentloaded", timeout: 20_000 });
+  await page.goto(`${BASE}/models`, { waitUntil: "domcontentloaded", timeout: 30_000 });
+  await page.waitForLoadState("networkidle", { timeout: 20_000 }).catch(() => {});
   const search = page.locator('input[placeholder*="earch" i], input[type="search"]').first();
-  await search.waitFor({ state: "visible", timeout: 10_000 }).catch(() => {});
+  await search.waitFor({ state: "visible", timeout: 20_000 });
+  await search.click();
+  await page.waitForTimeout(300);
   await search.fill(query);
-  await page.waitForTimeout(800); // debounce
+  await page.waitForTimeout(1_200); // debounce
 
   return await page
     .locator('a[id^="/models/"]')
@@ -210,6 +213,7 @@ export async function scrapeAA(
   const errors: string[] = [];
   const ctx = await newContext();
   const page = await ctx.newPage();
+  const dbg = (msg: string) => console.log(`[AA:${target.name}/${target.variant}] ${msg}`);
   try {
     let slug = target.slug_oa;
     let source: AAResult["source"] = "direct";
@@ -218,37 +222,58 @@ export async function scrapeAA(
     // 1. direct URL
     let ok = false;
     if (slug) {
-      ok = await tryGoto(page, `${BASE}/models/${slug}`);
+      const directUrl = `${BASE}/models/${slug}`;
+      dbg(`step-1 direct URL → ${directUrl}`);
+      ok = await tryGoto(page, directUrl);
+      dbg(`step-1 result: ${ok ? "OK (200)" : "FAILED (404 or network error)"}`);
+    } else {
+      dbg(`step-1 skipped — no slug_oa in catalog for variant "${target.variant}"`);
     }
 
     // 2. fuzzy fallback
     if (!ok) {
+      dbg(`step-2 search fallback — querying search bar for "${target.name}"`);
       try {
         const candidates = await searchCandidates(page, target.name);
+        dbg(`step-2 candidates found: ${candidates.length}`);
+        for (const c of candidates) {
+          dbg(`  candidate: "${c.label}" [tag=${c.tag ?? "none"}] → ${c.value}`);
+        }
         const res = fuzzyResolve({
           name: target.name,
           variant: target.variant as Variant,
           candidates,
           preferredTag: "Language Models",
         });
+        dbg(`step-2 fuzzy result: query="${res.query_used}", score=${res.score}, resolved=${res.resolved}`);
+        if (res.best) {
+          dbg(`  best match: "${res.best.label}" [tag=${res.best.tag ?? "none"}] → ${res.best.value}`);
+        }
         if (res.resolved && res.best) {
           slug = res.best.value.replace(/^\/models\//, "").replace(/\/.*$/, "");
           source = "fuzzy";
           fuzzyScore = res.score;
+          dbg(`step-2 resolved slug="${slug}", navigating…`);
           ok = await tryGoto(page, `${BASE}/models/${slug}`);
+          dbg(`step-2 navigation: ${ok ? "OK" : "FAILED"}`);
         } else {
           source = "unresolved";
           errors.push(
             `fuzzy resolve failed for "${target.name}" (${target.variant}); top score ${res.score}`,
           );
+          dbg(`step-2 unresolved — best score ${res.score} below threshold`);
         }
       } catch (err) {
-        errors.push(`search dropdown error: ${(err as Error).message}`);
+        const msg = (err as Error).message;
+        errors.push(`search dropdown error: ${msg}`);
         source = "unresolved";
+        dbg(`step-2 EXCEPTION in search/fuzzy: ${msg}`);
       }
     }
 
+    // 3. unresolved — will surface as error in log and trigger notify
     if (!ok || !slug) {
+      dbg(`step-3 UNRESOLVED — returning error. Errors: ${errors.join(" | ")}`);
       return { resolved_slug: null, source: "unresolved", errors };
     }
 

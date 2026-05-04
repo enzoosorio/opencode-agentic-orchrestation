@@ -8,6 +8,7 @@ import { scrapeAA, type AAResult } from "./scrape_artificialanalysis.ts";
 import { scrapeOR, type ORResult } from "./scrape_openrouter.ts";
 import { scrapeLiveBench, type LiveBenchResult } from "./scrape_livebench.ts";
 import { checkOpencodeCatalog } from "./check_opencode_catalog.ts";
+import { applyDiffToSidecar, readAdditions } from "./apply_diff_to_sidecar.ts";
 import { closeBrowser } from "./playwright_helpers.ts";
 import { ScrapeLog } from "./scrape_log.ts";
 import { getNotifier } from "../notify/index.ts";
@@ -59,12 +60,27 @@ export interface ProfileEntry {
   source_urls: { artificialanalysis: string | null; openrouter: string | null; livebench: string };
 }
 
+
 function mergeOne(
   target: ResolvedTarget,
   aa: AAResult,
   or: ORResult,
   lb: LiveBenchResult,
-): ProfileEntry {
+): ProfileEntry & { _null_fields: string[] } {
+  // Cross-source fallbacks: OR pricing fills gaps left by AA; context_window too.
+  const input_per_m = aa.general?.input_price_per_m ?? or.api?.input_price_per_m ?? null;
+  const output_per_m = aa.general?.output_price_per_m ?? or.api?.output_price_per_m ?? null;
+  const context_window_tokens = aa.general?.context_window_tokens ?? or.api?.context_length ?? null;
+
+  // Track which critical fields ended up null (for notify)
+  const _null_fields: string[] = [];
+  if (!aa.general) _null_fields.push("aa_general");
+  if (!lb.data) _null_fields.push("livebench");
+  if (input_per_m === null) _null_fields.push("pricing.input_per_m");
+  if (output_per_m === null) _null_fields.push("pricing.output_per_m");
+  if (context_window_tokens === null) _null_fields.push("context_window_tokens");
+  if (!or.page?.categories_top?.length) _null_fields.push("or_categories");
+
   return {
     model_name: target.name,
     variant: target.variant,
@@ -72,13 +88,10 @@ function mergeOne(
     sdk: target.sdk,
     slug_oa: aa.resolved_slug,
     slug_or: or.resolved_slug,
-    context_window_tokens:
-      aa.general?.context_window_tokens ?? or.api?.context_length ?? null,
+    context_window_tokens,
     pricing: {
-      input_per_m:
-        aa.general?.input_price_per_m ?? or.api?.input_price_per_m ?? null,
-      output_per_m:
-        aa.general?.output_price_per_m ?? or.api?.output_price_per_m ?? null,
+      input_per_m,
+      output_per_m,
       cache_hit_per_m: aa.general?.cache_hit_per_m ?? null,
       blended_7_2_1: aa.general?.blended_price_per_m ?? null,
     },
@@ -114,8 +127,9 @@ function mergeOne(
     source_urls: {
       artificialanalysis: aa.general?.url ?? null,
       openrouter: or.page?.url ?? null,
-      livebench: "https://livebench.ai/#/?highunseenbias=true",
+      livebench: lb.url,
     },
+    _null_fields,
   };
 }
 
@@ -132,10 +146,8 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
   log: ScrapeLog;
 }> {
   const log = new ScrapeLog();
-  const targets = expandTargets();
-  const subset = opts.limit ? targets.slice(0, opts.limit) : targets;
 
-  // 1. Catalog drift check
+  // 1. Catalog drift check — runs first so new/removed models affect targets
   const diff = await checkOpencodeCatalog();
   if (diff.errors.length) {
     for (const e of diff.errors) {
@@ -156,12 +168,17 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
       detail: `${r} no longer in opencode`,
     });
   }
+  await applyDiffToSidecar(diff, opts.dryRun);
+
+  const additions = readAdditions();
+  const targets = expandTargets(undefined, additions);
+  const subset = opts.limit ? targets.slice(0, opts.limit) : targets;
 
   const profiles: ProfileEntry[] = [];
 
   for (const target of subset) {
     const label = `${target.name}/${target.variant}`;
-    const [aa, or, lb] = await Promise.all([
+    const [aa, or, lb] : [AAResult, ORResult, LiveBenchResult] = await Promise.all([
       scrapeAA(target, { withProviders: opts.withProviders }).catch((err) => ({
         resolved_slug: null,
         source: "unresolved" as const,
@@ -176,6 +193,7 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
         matched_model: null,
         fuzzy_score: null,
         data: null,
+        url: `https://livebench.ai/#/?q=${encodeURIComponent(target.name)}&highunseenbias=true`,
         errors: [`LB fatal: ${(err as Error).message}`],
       })),
     ]);
@@ -214,7 +232,17 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
       });
     }
 
-    profiles.push(mergeOne(target, aa as AAResult, or as ORResult, lb));
+    const merged = mergeOne(target, aa as AAResult, or as ORResult, lb);
+    if (merged._null_fields.length) {
+      log.add({
+        url: `null-fields:${label}`,
+        action: "error",
+        detail: `campos null: ${merged._null_fields.join(", ")}`,
+      });
+    }
+    const { _null_fields: _nf, ...profile } = merged;
+    void _nf;
+    profiles.push(profile);
   }
 
   await closeBrowser();
@@ -230,14 +258,22 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
   try {
     const counts = log.countByAction();
     const notifier = getNotifier();
+    console.log(
+      `[notify] channel=${process.env.NOTIFY_CHANNEL ?? "(unset, default=telegram"}, notifier=${notifier.name}`,
+      `| TELEGRAM_BOT_TOKEN=${process.env.TELEGRAM_BOT_TOKEN ? "SET" : "MISSING"}`,
+      `| TELEGRAM_CHAT_ID=${process.env.TELEGRAM_CHAT_ID ? "SET" : "MISSING"}`,
+    );
     const lines: string[] = [
       `✅ ${counts.scrapped} scrapeos OK`,
     ];
-    if (counts.error > 0) lines.push(`⚠️ ${counts.error} errores`);
+    if (counts.error > 0) lines.push(`⚠️ ${counts.error} errores (ver scrape_log.md)`);
     if (counts.model_added > 0)
       lines.push(`🆕 ${counts.model_added} modelo(s) nuevo(s) detectado(s)`);
     if (counts.model_removed > 0)
       lines.push(`➖ ${counts.model_removed} modelo(s) removido(s)`);
+    const nullEntries = log.all.filter((e) => e.url.startsWith("null-fields:"));
+    if (nullEntries.length)
+      lines.push(`🔴 ${nullEntries.length} perfil(es) con campos null: ${nullEntries.map((e) => e.url.replace("null-fields:", "")).join(", ")}`);
     await notifier.send({
       title: `🔄 Profiles refresh — ${new Date().toISOString().slice(0, 10)}`,
       lines,
@@ -250,23 +286,47 @@ export async function buildProfiles(opts: RunOptions = {}): Promise<{
 }
 
 // CLI entry — `npm run fetch:profiles [-- --providers] [-- --dry] [-- --limit N]`
-if (import.meta.url === `file://${process.argv[1]}`.replace(/\\/g, "/")) {
-  const args = process.argv.slice(2);
-  const opts: RunOptions = {
-    withProviders: args.includes("--providers"),
-    dryRun: args.includes("--dry"),
-  };
-  const limitIdx = args.indexOf("--limit");
-  if (limitIdx >= 0) opts.limit = parseInt(args[limitIdx + 1] ?? "0", 10) || undefined;
+import { fileURLToPath } from "node:url";
+const _thisFile = fileURLToPath(import.meta.url).replace(/\\/g, "/");
+const _argv1 = (process.argv[1] ?? "").replace(/\\/g, "/");
+if (_thisFile === _argv1 || _thisFile.endsWith(_argv1) || _argv1.endsWith(_thisFile)) {
+  (async () => {
+    // tsx does not auto-load Next.js env files — load .env then .env.local manually
+    for (const envFile of [".env", ".env.local"]) {
+      try {
+        const lines = (await fs.readFile(envFile, "utf-8")).split("\n");
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed || trimmed.startsWith("#")) continue;
+          const eqIdx = trimmed.indexOf("=");
+          if (eqIdx < 0) continue;
+          const key = trimmed.slice(0, eqIdx).trim();
+          const raw = trimmed.slice(eqIdx + 1).trim();
+          // Strip quotes, then strip inline comments (e.g. "telegram  # options")
+          const val = raw.replace(/^["']|["']$/g, "").replace(/\s+#.*$/, "").trim();
+          if (key && !(key in process.env)) process.env[key] = val;
+        }
+      } catch { /* file not found, skip */ }
+    }
 
-  buildProfiles(opts)
-    .then(({ profiles, log }) => {
-      console.log(`built ${profiles.length} profiles`);
-      console.log(`log entries: ${log.all.length}`);
-      console.log(JSON.stringify(log.countByAction(), null, 2));
-    })
-    .catch((err) => {
-      console.error(err);
-      process.exit(1);
-    });
+    const args = process.argv.slice(2);
+    const opts: RunOptions = {
+      withProviders: args.includes("--providers"),
+      dryRun: args.includes("--dry"),
+    };
+    const limitIdx = args.indexOf("--limit");
+    if (limitIdx >= 0) opts.limit = parseInt(args[limitIdx + 1] ?? "0", 10) || undefined;
+
+    buildProfiles(opts)
+      .then(({ profiles, log }) => {
+        console.log(`built ${profiles.length} profiles`);
+        console.log(`log entries: ${log.all.length}`);
+        console.log(JSON.stringify(log.countByAction(), null, 2));
+        process.exit(0);
+      })
+      .catch((err) => {
+        console.error(err);
+        process.exit(1);
+      });
+  })();
 }

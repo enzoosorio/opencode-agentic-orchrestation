@@ -1,6 +1,5 @@
 import { createHash } from "node:crypto";
 import { LRUCache } from "lru-cache";
-import { ChatAnthropic } from "@langchain/anthropic";
 import { ChatOpenAI } from "@langchain/openai";
 import {
   Features,
@@ -37,13 +36,6 @@ interface ChatModel {
 function buildModel(): ChatModel {
   const provider = (process.env.CLASSIFIER_PROVIDER ?? "anthropic").toLowerCase();
   const model = process.env.CLASSIFIER_MODEL ?? "claude-haiku-4-5-20251001";
-  if (provider === "anthropic") {
-    return new ChatAnthropic({
-      model,
-      temperature: 0,
-      maxTokens: 300,
-    }) as unknown as ChatModel;
-  }
   if (provider === "openai") {
     return new ChatOpenAI({
       model,

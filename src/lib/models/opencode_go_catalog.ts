@@ -151,19 +151,41 @@ export interface ResolvedTarget {
   sdk: SdkType;
 }
 
+export interface CatalogAddition extends CatalogEntry {
+  status: "stub" | "removed";
+  detected_at: string;
+}
+
 export function expandTargets(
   catalog: CatalogEntry[] = OPENCODE_GO_CATALOG,
+  additions: CatalogAddition[] = [],
 ): ResolvedTarget[] {
+  const removedNames = new Set(
+    additions.filter((a) => a.status === "removed").map((a) => a.name.toLowerCase()),
+  );
+  const active = additions.filter((a) => a.status === "stub");
+  const merged = [
+    ...catalog.filter((e) => !removedNames.has(e.name.toLowerCase())),
+    ...active,
+  ];
+
   const out: ResolvedTarget[] = [];
-  for (let i = 0; i < catalog.length; i++) {
-    const entry = catalog[i];
+  for (let i = 0; i < merged.length; i++) {
+    const entry = merged[i];
     for (const variant of entry.variants) {
+      // Slug fallback: variant-specific → "high" → first available → null
+      // AA often only tracks the "high" effort page; low/medium use the same page.
+      const slug_oa =
+        entry.slug_oa_by_variant[variant] ??
+        entry.slug_oa_by_variant["high"] ??
+        (Object.values(entry.slug_oa_by_variant)[0] ?? null);
+
       out.push({
         catalog_index: i,
         name: entry.name,
         variant,
         slug_or: entry.slug_or,
-        slug_oa: entry.slug_oa_by_variant[variant] ?? null,
+        slug_oa,
         providers_opencode: entry.providers_opencode,
         sdk: entry.sdk,
       });

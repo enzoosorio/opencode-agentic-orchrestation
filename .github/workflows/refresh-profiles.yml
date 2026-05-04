@@ -40,7 +40,7 @@ jobs:
       - run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps firefox
 
       - name: Build profiles
         run: |
@@ -54,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/lib/models/profiles.json docs/scrape_log.md
+          git add src/lib/models/profiles.json src/lib/models/catalog_additions.json docs/scrape_log.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

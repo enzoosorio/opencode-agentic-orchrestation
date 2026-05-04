@@ -2,7 +2,11 @@ import { newContext } from "./playwright_helpers.ts";
 import * as fuzz from "fuzzball";
 import type { ResolvedTarget } from "../models/opencode_go_catalog.ts";
 
-const URL = "https://livebench.ai/#/?highunseenbias=true";
+const BASE_URL = "https://livebench.ai/#/?highunseenbias=true";
+
+function modelUrl(name: string): string {
+  return `https://livebench.ai/#/?q=${encodeURIComponent(name)}&sort=Reasoning+Average&highunseenbias=true`;
+}
 
 export interface LiveBenchRow {
   model: string;
@@ -24,7 +28,7 @@ async function fetchAllRows(): Promise<LiveBenchRow[]> {
   const ctx = await newContext();
   const page = await ctx.newPage();
   try {
-    await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 30_000 });
+    await page.goto(BASE_URL, { waitUntil: "domcontentloaded", timeout: 30_000 });
     await page.waitForLoadState("networkidle", { timeout: 15_000 }).catch(() => {});
     const headers = await page
       .locator("table thead th")
@@ -82,12 +86,14 @@ export interface LiveBenchResult {
   matched_model: string | null;
   fuzzy_score: number | null;
   data: LiveBenchRow | null;
+  url: string;
   errors: string[];
 }
 
 export async function scrapeLiveBench(
   target: ResolvedTarget,
 ): Promise<LiveBenchResult> {
+  const url = modelUrl(target.name);
   try {
     const rows = await fetchAllRows();
     if (rows.length === 0) {
@@ -95,6 +101,7 @@ export async function scrapeLiveBench(
         matched_model: null,
         fuzzy_score: null,
         data: null,
+        url,
         errors: ["livebench: no rows scraped (selectors likely broken)"],
       };
     }
@@ -114,6 +121,7 @@ export async function scrapeLiveBench(
       matched_model: best?.model ?? null,
       fuzzy_score: bestScore,
       data: bestScore >= 75 ? best : null,
+      url,
       errors: bestScore < 75 ? [`livebench: low fuzzy score ${bestScore}`] : [],
     };
   } catch (err) {
@@ -121,6 +129,7 @@ export async function scrapeLiveBench(
       matched_model: null,
       fuzzy_score: null,
       data: null,
+      url,
       errors: [`livebench error: ${(err as Error).message}`],
     };
   }

@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "model_name": "GLM-5.1",
+    "variant": "low",
+    "provider_used_by_opencode": [
+      "DeepInfra",
+      "Fireworks AI",
+      "Z.ai"
+    ],
+    "sdk": "openai_compatible",
+    "slug_oa": "glm-5-1",
+    "slug_or": "z-ai/glm-5.1",
+    "context_window_tokens": 5,
+    "pricing": {
+      "input_per_m": 1.4,
+      "output_per_m": 4.4,
+      "cache_hit_per_m": null,
+      "blended_7_2_1": null
+    },
+    // TODO: scrapear correctamente estas métricas de rendimiento, que son muy importantes.
+    // para ello, debemos señalar los ELEMENTOS HTML a scrapear correctos.
+    "performance": {
+      "tokens_per_sec": 5.1,
+      "ttft_seconds": null,
+      "end_to_end_seconds": null
+    },
+    "intelligence": {
+      "aa_index": 4,
+      "aa_coding_index": null,
+      "aa_agentic_index": null,
+      "benchmarks": {
+        "gdpval_aa": null,
+        "terminal_bench_hard": null,
+        "tau2_telecom": null,
+        "aa_lcr": null,
+        "aa_omniscience_acc": null,
+        "aa_omniscience_nonhall": null,
+        "hle": null,
+        "gpqa_diamond": null,
+        "scicode": null,
+        "ifbench": null,
+        "critpt": null,
+        "mmmu_pro": null
+      },
+      "livebench": {
+        "reasoning": 72.52,
+        "coding": 75.37,
+        "agentic_coding": 55,
+        "math": 84.89,
+        "data": 63.23,
+        "language": 71.78,
+        "if": 68.45
+      }
+    },
+    "verbosity_tokens": 4,
+    "cost_to_eval_usd": null,
+    "open_weights": true,
+    "params": {
+      "active": null,
+      "total": null
+    },
+    "or_categories_top": [],
+    "last_updated": "2026-05-04T04:38:27.662Z",
+    "source_urls": {
+      "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
+      "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
+      "livebench": "https://livebench.ai/#/?q=GLM-5.1&sort=Reasoning+Average&highunseenbias=true"
+    }
+  }
+]

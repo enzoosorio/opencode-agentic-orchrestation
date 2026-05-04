@@ -13,13 +13,17 @@ export interface ScrapeLogEntry {
   url: string;
   action: ScrapeAction;
   detail: string;
+  ts: string; // ISO datetime e.g. "2026-05-04 13:42:07"
 }
 
 export class ScrapeLog {
   private entries: ScrapeLogEntry[] = [];
 
-  add(entry: ScrapeLogEntry): void {
-    this.entries.push(entry);
+  add(entry: Omit<ScrapeLogEntry, "ts">): void {
+    this.entries.push({
+      ...entry,
+      ts: new Date().toISOString().replace("T", " ").slice(0, 19),
+    });
   }
 
   get all(): ScrapeLogEntry[] {
@@ -42,11 +46,11 @@ export class ScrapeLog {
   toMarkdownSection(date: string): string {
     const lines: string[] = [];
     lines.push(`## ${date}`);
-    lines.push(`| URL | Acción | Detalle |`);
-    lines.push(`|---|---|---|`);
+    lines.push(`| Timestamp | URL | Acción | Detalle |`);
+    lines.push(`|---|---|---|---|`);
     for (const e of this.entries) {
       const detail = e.detail.replace(/\|/g, "\\|").replace(/\n/g, " ");
-      lines.push(`| ${e.url} | ${e.action} | ${detail} |`);
+      lines.push(`| ${e.ts} | ${e.url} | ${e.action} | ${detail} |`);
     }
     lines.push("");
     return lines.join("\n");
