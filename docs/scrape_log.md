@@ -3,6 +3,139 @@
 Append-only registry of URLs visited by the static RAG fetcher.
 
 
+## 2026-08-17
+| Timestamp | URL | Acción | Detalle |
+|---|---|---|---|
+| 2026-08-17 06:29:46 | opencode-catalog | error | github raw fetch: github raw 404 |
+| 2026-08-17 06:30:32 | https://artificialanalysis.ai/models/glm-5-1 | scrapped | GLM-5.1/low via direct |
+| 2026-08-17 06:30:32 | https://openrouter.ai/z-ai/glm-5.1 | scrapped | GLM-5.1/low via direct |
+| 2026-08-17 06:30:32 | https://livebench.ai | scrapped | GLM-5.1/low: matched "GLM-5.2open" (score 83) |
+| 2026-08-17 06:30:32 | null-fields:GLM-5.1/low | error | campos null: or_categories |
+| 2026-08-17 06:31:07 | https://artificialanalysis.ai/models/glm-5-1 | scrapped | GLM-5.1/medium via direct |
+| 2026-08-17 06:31:07 | https://openrouter.ai/z-ai/glm-5.1 | scrapped | GLM-5.1/medium via direct |
+| 2026-08-17 06:31:07 | https://livebench.ai | scrapped | GLM-5.1/medium: matched "GLM-5.2open" (score 83) |
+| 2026-08-17 06:31:07 | null-fields:GLM-5.1/medium | error | campos null: or_categories |
+| 2026-08-17 06:31:42 | https://artificialanalysis.ai/models/glm-5-1 | scrapped | GLM-5.1/high via direct |
+| 2026-08-17 06:31:42 | https://openrouter.ai/z-ai/glm-5.1 | scrapped | GLM-5.1/high via direct |
+| 2026-08-17 06:31:42 | https://livebench.ai | scrapped | GLM-5.1/high: matched "GLM-5.2open" (score 83) |
+| 2026-08-17 06:31:42 | null-fields:GLM-5.1/high | error | campos null: or_categories |
+| 2026-08-17 06:32:17 | https://artificialanalysis.ai/models/glm-5 | scrapped | GLM-5/low via direct |
+| 2026-08-17 06:32:17 | https://openrouter.ai/z-ai/glm-5 | scrapped | GLM-5/low via direct |
+| 2026-08-17 06:32:17 | https://livebench.ai | scrapped | GLM-5/low: matched "GLM-5.2open" (score 100) |
+| 2026-08-17 06:32:17 | null-fields:GLM-5/low | error | campos null: or_categories |
+| 2026-08-17 06:32:53 | https://artificialanalysis.ai/models/glm-5 | scrapped | GLM-5/medium via direct |
+| 2026-08-17 06:32:53 | https://openrouter.ai/z-ai/glm-5 | scrapped | GLM-5/medium via direct |
+| 2026-08-17 06:32:53 | https://livebench.ai | scrapped | GLM-5/medium: matched "GLM-5.2open" (score 100) |
+| 2026-08-17 06:32:53 | null-fields:GLM-5/medium | error | campos null: or_categories |
+| 2026-08-17 06:33:28 | https://artificialanalysis.ai/models/glm-5 | scrapped | GLM-5/high via direct |
+| 2026-08-17 06:33:28 | https://openrouter.ai/z-ai/glm-5 | scrapped | GLM-5/high via direct |
+| 2026-08-17 06:33:28 | https://livebench.ai | scrapped | GLM-5/high: matched "GLM-5.2open" (score 100) |
+| 2026-08-17 06:33:28 | null-fields:GLM-5/high | error | campos null: or_categories |
+| 2026-08-17 06:34:03 | https://artificialanalysis.ai/models/kimi-k2-5 | scrapped | Kimi K2.5/high via direct |
+| 2026-08-17 06:34:03 | https://openrouter.ai/moonshotai/kimi-k2.5 | scrapped | Kimi K2.5/high via direct |
+| 2026-08-17 06:34:03 | https://livebench.ai | scrapped | Kimi K2.5/high: matched "Kimi K2.6 Thinkingopen" (score 88) |
+| 2026-08-17 06:34:03 | null-fields:Kimi K2.5/high | error | campos null: or_categories |
+| 2026-08-17 06:34:38 | https://artificialanalysis.ai/models/kimi-k2-6 | scrapped | Kimi K2.6/high via direct |
+| 2026-08-17 06:34:38 | https://openrouter.ai/moonshotai/kimi-k2.6 | scrapped | Kimi K2.6/high via direct |
+| 2026-08-17 06:34:38 | https://livebench.ai | scrapped | Kimi K2.6/high: matched "Kimi K2.6 Thinkingopen" (score 100) |
+| 2026-08-17 06:34:38 | null-fields:Kimi K2.6/high | error | campos null: or_categories |
+| 2026-08-17 06:35:13 | https://artificialanalysis.ai/models/mimo-v2-pro | scrapped | MiMo-V2-Pro/low via direct |
+| 2026-08-17 06:35:13 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2-Pro/low via fuzzy (score 100) |
+| 2026-08-17 06:35:13 | null-fields:MiMo-V2-Pro/low | error | campos null: livebench, or_categories |
+| 2026-08-17 06:35:49 | https://artificialanalysis.ai/models/mimo-v2-pro | scrapped | MiMo-V2-Pro/medium via direct |
+| 2026-08-17 06:35:49 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2-Pro/medium via fuzzy (score 100) |
+| 2026-08-17 06:35:49 | null-fields:MiMo-V2-Pro/medium | error | campos null: livebench, or_categories |
+| 2026-08-17 06:36:24 | https://artificialanalysis.ai/models/mimo-v2-pro | scrapped | MiMo-V2-Pro/high via direct |
+| 2026-08-17 06:36:24 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2-Pro/high via fuzzy (score 100) |
+| 2026-08-17 06:36:24 | null-fields:MiMo-V2-Pro/high | error | campos null: livebench, or_categories |
+| 2026-08-17 06:36:59 | https://artificialanalysis.ai/models/mimo-v2-omni | scrapped | MiMo-V2-Omni/low via direct |
+| 2026-08-17 06:36:59 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2-Omni/low via fuzzy (score 79) |
+| 2026-08-17 06:36:59 | null-fields:MiMo-V2-Omni/low | error | campos null: livebench, or_categories |
+| 2026-08-17 06:37:34 | https://artificialanalysis.ai/models/mimo-v2-omni | scrapped | MiMo-V2-Omni/medium via direct |
+| 2026-08-17 06:37:34 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2-Omni/medium via fuzzy (score 79) |
+| 2026-08-17 06:37:34 | null-fields:MiMo-V2-Omni/medium | error | campos null: livebench, or_categories |
+| 2026-08-17 06:38:09 | https://artificialanalysis.ai/models/mimo-v2-omni | scrapped | MiMo-V2-Omni/high via direct |
+| 2026-08-17 06:38:09 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2-Omni/high via fuzzy (score 79) |
+| 2026-08-17 06:38:09 | null-fields:MiMo-V2-Omni/high | error | campos null: livebench, or_categories |
+| 2026-08-17 06:38:44 | https://artificialanalysis.ai/models/mimo-v2-5-pro | scrapped | MiMo-V2.5-Pro/low via direct |
+| 2026-08-17 06:38:44 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2.5-Pro/low via direct |
+| 2026-08-17 06:38:44 | null-fields:MiMo-V2.5-Pro/low | error | campos null: livebench, or_categories |
+| 2026-08-17 06:39:19 | https://artificialanalysis.ai/models/mimo-v2-5-pro | scrapped | MiMo-V2.5-Pro/medium via direct |
+| 2026-08-17 06:39:19 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2.5-Pro/medium via direct |
+| 2026-08-17 06:39:19 | null-fields:MiMo-V2.5-Pro/medium | error | campos null: livebench, or_categories |
+| 2026-08-17 06:39:54 | https://artificialanalysis.ai/models/mimo-v2-5-pro | scrapped | MiMo-V2.5-Pro/high via direct |
+| 2026-08-17 06:39:54 | https://openrouter.ai/xiaomi/mimo-v2.5-pro | scrapped | MiMo-V2.5-Pro/high via direct |
+| 2026-08-17 06:39:54 | null-fields:MiMo-V2.5-Pro/high | error | campos null: livebench, or_categories |
+| 2026-08-17 06:40:29 | artificialanalysis:MiMo-V2.5 | error | MiMo-V2.5/low: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:40:29 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2.5/low via direct |
+| 2026-08-17 06:40:29 | null-fields:MiMo-V2.5/low | error | campos null: aa_general, livebench, or_categories |
+| 2026-08-17 06:41:04 | artificialanalysis:MiMo-V2.5 | error | MiMo-V2.5/medium: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:41:04 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2.5/medium via direct |
+| 2026-08-17 06:41:04 | null-fields:MiMo-V2.5/medium | error | campos null: aa_general, livebench, or_categories |
+| 2026-08-17 06:41:40 | artificialanalysis:MiMo-V2.5 | error | MiMo-V2.5/high: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:41:40 | https://openrouter.ai/xiaomi/mimo-v2.5 | scrapped | MiMo-V2.5/high via direct |
+| 2026-08-17 06:41:40 | null-fields:MiMo-V2.5/high | error | campos null: aa_general, livebench, or_categories |
+| 2026-08-17 06:42:15 | artificialanalysis:Qwen3.5 Plus | error | Qwen3.5 Plus/low: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:42:15 | https://openrouter.ai/qwen/qwen3.5-plus-20260420 | scrapped | Qwen3.5 Plus/low via fuzzy (score 100) |
+| 2026-08-17 06:42:15 | https://livebench.ai | scrapped | Qwen3.5 Plus/low: matched "Qwen 3.6 Plus" (score 80) |
+| 2026-08-17 06:42:15 | null-fields:Qwen3.5 Plus/low | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:42:50 | artificialanalysis:Qwen3.5 Plus | error | Qwen3.5 Plus/high: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:42:50 | https://openrouter.ai/qwen/qwen3.5-plus-20260420 | scrapped | Qwen3.5 Plus/high via fuzzy (score 100) |
+| 2026-08-17 06:42:50 | https://livebench.ai | scrapped | Qwen3.5 Plus/high: matched "Qwen 3.6 Plus" (score 80) |
+| 2026-08-17 06:42:50 | null-fields:Qwen3.5 Plus/high | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:43:25 | https://artificialanalysis.ai/models/qwen3-6-plus | scrapped | Qwen3.6 Plus/low via direct |
+| 2026-08-17 06:43:25 | https://openrouter.ai/qwen/qwen3.6-plus | scrapped | Qwen3.6 Plus/low via direct |
+| 2026-08-17 06:43:25 | https://livebench.ai | scrapped | Qwen3.6 Plus/low: matched "Qwen 3.6 Plus" (score 88) |
+| 2026-08-17 06:43:25 | null-fields:Qwen3.6 Plus/low | error | campos null: or_categories |
+| 2026-08-17 06:44:01 | https://artificialanalysis.ai/models/qwen3-6-plus | scrapped | Qwen3.6 Plus/high via direct |
+| 2026-08-17 06:44:01 | https://openrouter.ai/qwen/qwen3.6-plus | scrapped | Qwen3.6 Plus/high via direct |
+| 2026-08-17 06:44:01 | https://livebench.ai | scrapped | Qwen3.6 Plus/high: matched "Qwen 3.6 Plus" (score 88) |
+| 2026-08-17 06:44:01 | null-fields:Qwen3.6 Plus/high | error | campos null: or_categories |
+| 2026-08-17 06:44:36 | https://artificialanalysis.ai/models/minimax-m2-7 | scrapped | MiniMax M2.7/high via direct |
+| 2026-08-17 06:44:36 | https://openrouter.ai/minimax/minimax-m2.7 | scrapped | MiniMax M2.7/high via direct |
+| 2026-08-17 06:44:36 | https://livebench.ai | scrapped | MiniMax M2.7/high: matched "Minimax M3" (score 82) |
+| 2026-08-17 06:44:36 | null-fields:MiniMax M2.7/high | error | campos null: or_categories |
+| 2026-08-17 06:45:11 | artificialanalysis:MiniMax M2.7 | error | MiniMax M2.7/max: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:45:11 | https://openrouter.ai/minimax/minimax-m2.7 | scrapped | MiniMax M2.7/max via direct |
+| 2026-08-17 06:45:11 | https://livebench.ai | scrapped | MiniMax M2.7/max: matched "Minimax M3" (score 82) |
+| 2026-08-17 06:45:11 | null-fields:MiniMax M2.7/max | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:45:46 | https://artificialanalysis.ai/models/minimax-m2-5 | scrapped | MiniMax M2.5/high via direct |
+| 2026-08-17 06:45:46 | https://openrouter.ai/minimax/minimax-m2.5 | scrapped | MiniMax M2.5/high via direct |
+| 2026-08-17 06:45:46 | https://livebench.ai | scrapped | MiniMax M2.5/high: matched "Minimax M3" (score 82) |
+| 2026-08-17 06:45:46 | null-fields:MiniMax M2.5/high | error | campos null: or_categories |
+| 2026-08-17 06:46:22 | https://artificialanalysis.ai/models/minimax-m2-5 | scrapped | MiniMax M2.5/max via direct |
+| 2026-08-17 06:46:22 | https://openrouter.ai/minimax/minimax-m2.5 | scrapped | MiniMax M2.5/max via direct |
+| 2026-08-17 06:46:22 | https://livebench.ai | scrapped | MiniMax M2.5/max: matched "Minimax M3" (score 82) |
+| 2026-08-17 06:46:22 | null-fields:MiniMax M2.5/max | error | campos null: or_categories |
+| 2026-08-17 06:46:57 | artificialanalysis:DeepSeek V4 Pro | error | DeepSeek V4 Pro/low: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:46:57 | https://openrouter.ai/deepseek/deepseek-v4-pro | scrapped | DeepSeek V4 Pro/low via direct |
+| 2026-08-17 06:46:57 | https://livebench.ai | scrapped | DeepSeek V4 Pro/low: matched "DeepSeek V4 Pro 0813open" (score 100) |
+| 2026-08-17 06:46:57 | null-fields:DeepSeek V4 Pro/low | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:47:33 | artificialanalysis:DeepSeek V4 Pro | error | DeepSeek V4 Pro/medium: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:47:33 | https://openrouter.ai/deepseek/deepseek-v4-pro | scrapped | DeepSeek V4 Pro/medium via direct |
+| 2026-08-17 06:47:33 | https://livebench.ai | scrapped | DeepSeek V4 Pro/medium: matched "DeepSeek V4 Pro 0813open" (score 100) |
+| 2026-08-17 06:47:33 | null-fields:DeepSeek V4 Pro/medium | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:48:08 | artificialanalysis:DeepSeek V4 Pro | error | DeepSeek V4 Pro/high: search dropdown error: locator.waitFor: Timeout 20000ms exceeded. Call log:   - waiting for locator('input[placeholder*="earch" i], input[type="search"]').first() to be visible  |
+| 2026-08-17 06:48:08 | https://openrouter.ai/deepseek/deepseek-v4-pro | scrapped | DeepSeek V4 Pro/high via direct |
+| 2026-08-17 06:48:08 | https://livebench.ai | scrapped | DeepSeek V4 Pro/high: matched "DeepSeek V4 Pro 0813open" (score 100) |
+| 2026-08-17 06:48:08 | null-fields:DeepSeek V4 Pro/high | error | campos null: aa_general, or_categories |
+| 2026-08-17 06:48:43 | https://artificialanalysis.ai/models/deepseek-v4-pro | scrapped | DeepSeek V4 Pro/max via direct |
+| 2026-08-17 06:48:43 | https://openrouter.ai/deepseek/deepseek-v4-pro | scrapped | DeepSeek V4 Pro/max via direct |
+| 2026-08-17 06:48:43 | https://livebench.ai | scrapped | DeepSeek V4 Pro/max: matched "DeepSeek V4 Pro 0813open" (score 100) |
+| 2026-08-17 06:48:43 | null-fields:DeepSeek V4 Pro/max | error | campos null: or_categories |
+| 2026-08-17 06:49:19 | https://artificialanalysis.ai/models/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/low via direct |
+| 2026-08-17 06:49:19 | https://openrouter.ai/deepseek/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/low via direct |
+| 2026-08-17 06:49:19 | https://livebench.ai | scrapped | DeepSeek V4 Flash/low: matched "DeepSeek V4 Flash 0731open" (score 100) |
+| 2026-08-17 06:49:19 | null-fields:DeepSeek V4 Flash/low | error | campos null: or_categories |
+| 2026-08-17 06:49:54 | https://artificialanalysis.ai/models/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/medium via direct |
+| 2026-08-17 06:49:54 | https://openrouter.ai/deepseek/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/medium via direct |
+| 2026-08-17 06:49:54 | https://livebench.ai | scrapped | DeepSeek V4 Flash/medium: matched "DeepSeek V4 Flash 0731open" (score 100) |
+| 2026-08-17 06:49:54 | null-fields:DeepSeek V4 Flash/medium | error | campos null: or_categories |
+| 2026-08-17 06:50:29 | https://artificialanalysis.ai/models/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/high via direct |
+| 2026-08-17 06:50:29 | https://openrouter.ai/deepseek/deepseek-v4-flash | scrapped | DeepSeek V4 Flash/high via direct |
+| 2026-08-17 06:50:29 | https://livebench.ai | scrapped | DeepSeek V4 Flash/high: matched "DeepSeek V4 Flash 0731open" (score 100) |
+| 2026-08-17 06:50:29 | null-fields:DeepSeek V4 Flash/high | error | campos null: or_categories |
+
 ## 2026-08-10
 | Timestamp | URL | Acción | Detalle |
 |---|---|---|---|
