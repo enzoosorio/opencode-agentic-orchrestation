@@ -58,7 +58,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:30.628Z",
+    "last_updated": "2026-10-12T13:45:07.506Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
       "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
@@ -124,7 +124,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:34.707Z",
+    "last_updated": "2026-10-12T13:45:12.868Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
       "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
@@ -190,7 +190,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:38.618Z",
+    "last_updated": "2026-10-12T13:45:18.733Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5-1",
       "openrouter": "https://openrouter.ai/z-ai/glm-5.1",
@@ -256,7 +256,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:42.436Z",
+    "last_updated": "2026-10-12T13:45:25.329Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
       "openrouter": "https://openrouter.ai/z-ai/glm-5",
@@ -322,7 +322,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:46.310Z",
+    "last_updated": "2026-10-12T13:45:30.973Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
       "openrouter": "https://openrouter.ai/z-ai/glm-5",
@@ -388,7 +388,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:50.249Z",
+    "last_updated": "2026-10-12T13:45:36.105Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/glm-5",
       "openrouter": "https://openrouter.ai/z-ai/glm-5",
@@ -412,7 +412,7 @@
       "blended_7_2_1": null
     },
     "performance": {
-      "tokens_per_sec": 4,
+      "tokens_per_sec": 2,
       "ttft_seconds": null,
       "end_to_end_seconds": null
     },
@@ -452,7 +452,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:54.081Z",
+    "last_updated": "2026-10-12T13:45:41.676Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/kimi-k2-5",
       "openrouter": "https://openrouter.ai/moonshotai/kimi-k2.5",
@@ -470,13 +470,13 @@
     "slug_or": "moonshotai/kimi-k2.6",
     "context_window_tokens": 2,
     "pricing": {
-      "input_per_m": 0.95,
+      "input_per_m": 3,
       "output_per_m": 0.15,
       "cache_hit_per_m": null,
       "blended_7_2_1": null
     },
     "performance": {
-      "tokens_per_sec": 2,
+      "tokens_per_sec": 1,
       "ttft_seconds": null,
       "end_to_end_seconds": null
     },
@@ -516,7 +516,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:53:58.406Z",
+    "last_updated": "2026-10-12T13:45:46.675Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/kimi-k2-6",
       "openrouter": "https://openrouter.ai/moonshotai/kimi-k2.6",
@@ -580,7 +580,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:02.205Z",
+    "last_updated": "2026-10-12T13:45:51.407Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -644,7 +644,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:05.833Z",
+    "last_updated": "2026-10-12T13:45:56.288Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -708,7 +708,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:09.438Z",
+    "last_updated": "2026-10-12T13:46:01.189Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.6-pro-ultraspeed",
@@ -772,7 +772,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:13.455Z",
+    "last_updated": "2026-10-12T13:46:05.991Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -836,7 +836,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:17.270Z",
+    "last_updated": "2026-10-12T13:46:11.421Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -900,7 +900,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:20.771Z",
+    "last_updated": "2026-10-12T13:46:16.572Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-omni",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -964,7 +964,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:24.450Z",
+    "last_updated": "2026-10-12T13:46:22.097Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
@@ -982,7 +982,7 @@
     "slug_or": "xiaomi/mimo-v2.5-pro",
     "context_window_tokens": 2,
     "pricing": {
-      "input_per_m": 0.43,
+      "input_per_m": 3,
       "output_per_m": 0.15,
       "cache_hit_per_m": null,
       "blended_7_2_1": null
@@ -1028,7 +1028,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:28.328Z",
+    "last_updated": "2026-10-12T13:46:26.658Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
@@ -1092,7 +1092,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:31.958Z",
+    "last_updated": "2026-10-12T13:46:31.735Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/mimo-v2-5-pro",
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
@@ -1143,7 +1143,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:54:54.659Z",
+    "last_updated": "2026-10-12T13:46:55.373Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -1194,7 +1194,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:55:17.443Z",
+    "last_updated": "2026-10-12T13:47:18.863Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -1245,7 +1245,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:55:40.042Z",
+    "last_updated": "2026-10-12T13:47:42.312Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/xiaomi/mimo-v2.5",
@@ -1296,7 +1296,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:02.645Z",
+    "last_updated": "2026-10-12T13:48:05.562Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/qwen/qwen3.5-plus-20260420",
@@ -1347,7 +1347,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:25.251Z",
+    "last_updated": "2026-10-12T13:48:28.838Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/qwen/qwen3.5-plus-20260420",
@@ -1411,7 +1411,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:28.989Z",
+    "last_updated": "2026-10-12T13:48:36.337Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/qwen3-6-plus",
       "openrouter": "https://openrouter.ai/qwen/qwen3.6-plus",
@@ -1475,7 +1475,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:32.735Z",
+    "last_updated": "2026-10-12T13:48:41.700Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/qwen3-6-plus",
       "openrouter": "https://openrouter.ai/qwen/qwen3.6-plus",
@@ -1539,7 +1539,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:36.830Z",
+    "last_updated": "2026-10-12T13:48:47.226Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-7",
       "openrouter": "https://openrouter.ai/minimax/minimax-m2.7",
@@ -1590,7 +1590,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:56:59.819Z",
+    "last_updated": "2026-10-12T13:49:10.870Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/minimax/minimax-m2.7",
@@ -1654,7 +1654,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:57:03.986Z",
+    "last_updated": "2026-10-12T13:49:16.269Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-5",
       "openrouter": "https://openrouter.ai/minimax/minimax-m2.5",
@@ -1718,7 +1718,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:57:07.983Z",
+    "last_updated": "2026-10-12T13:49:21.523Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/minimax-m2-5",
       "openrouter": "https://openrouter.ai/minimax/minimax-m2.5",
@@ -1736,8 +1736,8 @@
     "slug_or": "deepseek/deepseek-v4-pro",
     "context_window_tokens": 1048576,
     "pricing": {
-      "input_per_m": 0.20879999999999999,
-      "output_per_m": 0.41759999999999997,
+      "input_per_m": 0.442656,
+      "output_per_m": 0.885312,
       "cache_hit_per_m": null,
       "blended_7_2_1": null
     },
@@ -1769,7 +1769,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:57:30.844Z",
+    "last_updated": "2026-10-12T13:49:44.716Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
@@ -1787,8 +1787,8 @@
     "slug_or": "deepseek/deepseek-v4-pro",
     "context_window_tokens": 1048576,
     "pricing": {
-      "input_per_m": 0.20879999999999999,
-      "output_per_m": 0.41759999999999997,
+      "input_per_m": 0.442656,
+      "output_per_m": 0.885312,
       "cache_hit_per_m": null,
       "blended_7_2_1": null
     },
@@ -1820,7 +1820,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:57:53.315Z",
+    "last_updated": "2026-10-12T13:50:08.035Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
@@ -1838,8 +1838,8 @@
     "slug_or": "deepseek/deepseek-v4-pro",
     "context_window_tokens": 1048576,
     "pricing": {
-      "input_per_m": 0.20879999999999999,
-      "output_per_m": 0.41759999999999997,
+      "input_per_m": 0.442656,
+      "output_per_m": 0.885312,
       "cache_hit_per_m": null,
       "blended_7_2_1": null
     },
@@ -1871,7 +1871,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:58:16.050Z",
+    "last_updated": "2026-10-12T13:50:31.168Z",
     "source_urls": {
       "artificialanalysis": null,
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
@@ -1895,7 +1895,7 @@
       "blended_7_2_1": null
     },
     "performance": {
-      "tokens_per_sec": 4,
+      "tokens_per_sec": 3,
       "ttft_seconds": null,
       "end_to_end_seconds": null
     },
@@ -1935,7 +1935,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:58:20.187Z",
+    "last_updated": "2026-10-12T13:50:36.538Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-pro",
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-pro",
@@ -1999,7 +1999,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:58:24.506Z",
+    "last_updated": "2026-10-12T13:50:42.025Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
@@ -2063,7 +2063,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:58:28.640Z",
+    "last_updated": "2026-10-12T13:50:47.422Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
@@ -2127,7 +2127,7 @@
       "total": null
     },
     "or_categories_top": [],
-    "last_updated": "2026-10-05T12:58:32.606Z",
+    "last_updated": "2026-10-12T13:50:53.011Z",
     "source_urls": {
       "artificialanalysis": "https://artificialanalysis.ai/models/deepseek-v4-flash",
       "openrouter": "https://openrouter.ai/deepseek/deepseek-v4-flash",
